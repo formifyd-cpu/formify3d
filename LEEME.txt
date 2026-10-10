@@ -1,0 +1,18 @@
+FORMIFY 3D — sitio web inicial
+
+ARCHIVOS
+- index.html: página web responsive.
+- assets/: imágenes suministradas para el sitio.
+
+CÓMO VERLA
+1. Descomprime formify3d_web.zip.
+2. Abre index.html en Chrome, Edge o Firefox.
+3. Para publicarla, sube index.html y la carpeta assets completa a tu servicio de hosting.
+
+WHATSAPP
+Los botones abren un chat a +52 447 115 9051 con un mensaje preparado.
+El número se configura en index.html en la constante WHATSAPP_NUMBER.
+
+IMPORTANTE
+Esta versión permite iniciar pedidos y cotizaciones por WhatsApp. No procesa pagos en línea ni almacena pedidos en una base de datos.
+Los precios y las condiciones de entrega se han tomado de las imágenes compartidas; confirma disponibilidad y condiciones antes de vender.

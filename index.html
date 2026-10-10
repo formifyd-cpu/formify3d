@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0759bd">
+  <meta name="description" content="FORMIFY 3D: impresión 3D personalizada, prototipos, piezas, figuras y placas para mascotas. Cuéntanos tu idea y solicita tu cotización por WhatsApp.">
+  <title>FORMIFY 3D | Tú lo imaginas, nosotros lo imprimimos</title>
+  <style>
+    :root{--blue:#0876df;--blue2:#0750a4;--navy:#0b2448;--sky:#eaf5ff;--ink:#14243b;--muted:#62718a;--line:#dce7f2;--white:#fff;--shadow:0 16px 45px rgba(10,55,105,.10);--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{background:var(--navy);color:#eaf5ff;text-align:center;font-size:.85rem;padding:9px 16px}.topbar strong{color:#73c4ff}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(220,231,242,.85)}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:78px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.04em;color:var(--navy);font-size:1.25rem}.brand img{width:54px;height:54px;object-fit:cover;object-position:center;border-radius:13px}.brand span span{color:var(--blue)}nav{display:flex;align-items:center;gap:26px;font-size:.94rem;font-weight:650;color:#354762}nav a:hover{color:var(--blue)}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 19px;border-radius:13px;font-weight:800;border:1px solid transparent;cursor:pointer;transition:.2s; font:inherit;font-weight:800}.btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;box-shadow:0 9px 22px rgba(8,118,223,.22)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 13px 26px rgba(8,118,223,.28)}.btn-light{background:#fff;border-color:var(--line);color:var(--navy)}.btn-light:hover{border-color:#9bc9f5;background:#f8fbff}.menu-toggle{display:none;background:none;border:0;font-size:1.7rem;color:var(--navy)}
+    .hero{padding:68px 0 54px;overflow:hidden;background:radial-gradient(ellipse at 85% 18%,#d9efff 0,rgba(217,239,255,0) 38%),linear-gradient(180deg,#f8fcff,#fff)}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:52px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #c9e5ff;border-radius:999px;background:#fff;padding:7px 12px;color:var(--blue2);font-size:.83rem;font-weight:800}.eyebrow i{width:8px;height:8px;background:#20b5ff;border-radius:50%;box-shadow:0 0 0 4px #e1f4ff}.hero h1{font-size:clamp(2.6rem,5vw,4.6rem);line-height:1.03;letter-spacing:-.065em;color:var(--navy);margin:22px 0}.hero h1 em{font-style:normal;color:var(--blue)}.hero p{font-size:1.12rem;max-width:540px;color:var(--muted);margin:0 0 27px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.trust-row{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#536781;font-size:.87rem;font-weight:650}.trust-row span{display:flex;align-items:center;gap:7px}.check{color:#0a91e8;font-weight:900}.hero-art{position:relative}.hero-art img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:top;border-radius:28px;box-shadow:var(--shadow);border:8px solid #fff}.float-card{position:absolute;left:-25px;bottom:26px;background:#fff;border:1px solid var(--line);border-radius:17px;padding:14px 17px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center}.float-icon{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:#e5f4ff;font-size:1.4rem}.float-card b{display:block;color:var(--navy)}.float-card small{color:var(--muted)}
+    section{padding:76px 0}.section-head{max-width:670px;margin:0 auto 35px;text-align:center}.section-kicker{color:var(--blue);font-size:.78rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.section-head h2{font-size:clamp(2rem,3.3vw,3rem);line-height:1.1;letter-spacing:-.045em;color:var(--navy);margin:10px 0 13px}.section-head p{color:var(--muted);margin:0;font-size:1.02rem}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{border:1px solid var(--line);border-radius:var(--radius);padding:25px;background:#fff;transition:.2s}.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#b7dcff}.service-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:16px;background:var(--sky);font-size:1.55rem;margin-bottom:18px}.service-card h3{margin:0 0 8px;color:var(--navy);font-size:1.12rem}.service-card p{margin:0;color:var(--muted);font-size:.94rem}
+    .products{background:#f6faff}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product-card{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#fff;display:flex;flex-direction:column}.product-card img{width:100%;height:240px;object-fit:cover;object-position:center}.product-content{padding:21px;display:flex;flex-direction:column;align-items:flex-start;flex:1}.pill{font-size:.75rem;font-weight:850;color:var(--blue2);background:#eaf5ff;padding:5px 9px;border-radius:99px}.product-content h3{margin:12px 0 7px;color:var(--navy);font-size:1.2rem}.product-content p{margin:0 0 17px;color:var(--muted);font-size:.92rem;flex:1}.price-row{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;margin-top:auto}.price{font-size:1.55rem;font-weight:900;color:var(--navy);letter-spacing:-.04em}.price small{font-size:.75rem;color:var(--muted);font-weight:600;letter-spacing:0}.product-content .btn{width:100%;margin-top:14px}
+    .pet-section{background:linear-gradient(130deg,#082d63,#0759bd);color:#fff;overflow:hidden}.pet-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:50px;align-items:center}.pet-image{border-radius:25px;overflow:hidden;border:7px solid rgba(255,255,255,.16);box-shadow:0 22px 50px rgba(0,0,0,.2)}.pet-image img{width:100%;height:100%;object-fit:cover}.pet-section .section-kicker{color:#8ed7ff}.pet-section h2{font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.06;letter-spacing:-.05em;margin:12px 0 16px}.pet-section p{color:#d6eaff}.pet-options{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:25px 0}.pet-option{padding:17px;border-radius:16px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08)}.pet-option strong{font-size:1.8rem;display:block;letter-spacing:-.04em}.pet-option span{font-size:.87rem;color:#d6eaff}.pet-section .btn-light{border:0}.delivery-note{font-size:.88rem;margin-top:15px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{text-align:center;padding:24px 18px}.step-num{width:52px;height:52px;margin:0 auto 16px;border-radius:18px;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:1.2rem}.step h3{color:var(--navy);margin:0 0 7px}.step p{color:var(--muted);font-size:.94rem;margin:0}
+    .cta{padding:0 0 76px}.cta-panel{border-radius:28px;padding:45px;background:linear-gradient(120deg,#eaf6ff,#f8fcff);border:1px solid #d2eaff;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta-panel h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.1;letter-spacing:-.045em;color:var(--navy);margin:0 0 10px}.cta-panel p{margin:0;color:var(--muted)}.cta-panel .btn{flex-shrink:0}
+    footer{background:#071c39;color:#c8d7ea;padding:43px 0 24px}.footer-main{display:flex;justify-content:space-between;gap:30px;align-items:flex-start;padding-bottom:30px}.footer-brand{color:#fff;font-size:1.25rem;font-weight:900}.footer-brand span{color:#3ba8ff}.footer-main p{max-width:410px;color:#a9bdd6;font-size:.92rem}.footer-links{display:flex;gap:22px;flex-wrap:wrap;font-size:.9rem}.footer-links a:hover{color:#fff}.copyright{border-top:1px solid rgba(255,255,255,.13);padding-top:19px;font-size:.8rem;color:#8fa6c3;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .whatsapp-float{position:fixed;z-index:30;right:22px;bottom:22px;background:#20bf68;color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;box-shadow:0 12px 30px rgba(13,125,65,.3);border:3px solid #fff}.whatsapp-float:hover{transform:translateY(-3px)}
+    .toast{position:fixed;bottom:95px;right:22px;z-index:40;background:#0b2448;color:#fff;padding:12px 16px;border-radius:12px;box-shadow:var(--shadow);display:none;max-width:300px}.toast.show{display:block}
+    @media(max-width:850px){nav{gap:14px}.nav-cta{display:none}.hero-grid,.pet-grid{grid-template-columns:1fr;gap:35px}.hero{padding-top:45px}.hero-art{max-width:600px;margin:auto}.float-card{left:10px}.service-grid{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,1fr)}.pet-image{max-width:650px;order:2}.pet-copy{order:1}.cta-panel{align-items:flex-start;flex-direction:column}}
+    @media(max-width:620px){.container{width:min(100% - 28px,1160px)}.topbar{font-size:.76rem}.nav{min-height:68px}.brand img{width:45px;height:45px}.menu-toggle{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:18px 22px 22px;flex-direction:column;align-items:flex-start;gap:17px}nav.open{display:flex}.hero{padding:36px 0 42px}.hero h1{font-size:2.8rem}.hero p{font-size:1rem}.hero-actions .btn{width:100%}.trust-row{gap:12px}.hero-art img{border-width:5px;border-radius:20px}.float-card{bottom:12px;padding:10px 12px}.float-card small{font-size:.72rem}section{padding:57px 0}.service-grid,.product-grid,.steps{grid-template-columns:1fr}.service-card{padding:22px}.product-card img{height:260px}.pet-grid{gap:27px}.pet-options{gap:9px}.pet-option{padding:13px}.pet-option strong{font-size:1.55rem}.cta{padding-bottom:55px}.cta-panel{padding:28px 22px}.cta-panel .btn{width:100%}.footer-main{flex-direction:column}.copyright{font-size:.76rem}.whatsapp-float{width:54px;height:54px;right:14px;bottom:14px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">Impresión 3D personalizada · <strong>Tu idea puede hacerse realidad</strong></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="FORMIFY 3D inicio">
+        <img src="assets/logo-formify3d.jpeg" alt="Logo de FORMIFY 3D">
+        <span>FORMIFY<span>3D</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" id="menuToggle">☰</button>
+      <nav id="mainNav">
+        <a href="#servicios">Servicios</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#mascotas">Placas para mascotas</a>
+        <a href="#como-pedir">Cómo pedir</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="#" data-whatsapp="Hola, FORMIFY 3D. Quiero solicitar una cotización.">Cotizar por WhatsApp ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><i></i> IMPRESIÓN 3D A TU MEDIDA</div>
+          <h1>Tú lo imaginas,<br><em>nosotros lo imprimimos.</em></h1>
+          <p>Convertimos tus ideas en objetos reales. Creamos piezas personalizadas, prototipos, maquetas, figuras y accesorios con impresión 3D.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogo">Explorar catálogo ↓</a>
+            <a class="btn btn-light" href="#" data-whatsapp="Hola, FORMIFY 3D. Quiero cotizar una impresión personalizada.">Solicitar cotización</a>
+          </div>
+          <div class="trust-row"><span><b class="check">✓</b> Diseños personalizados</span><span><b class="check">✓</b> Variedad de colores</span><span><b class="check">✓</b> Atención directa</span></div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/servicios-impresion3d.jpeg" alt="Ejemplos de impresión 3D, prototipos y figuras personalizadas">
+          <div class="float-card"><div class="float-icon">🖨️</div><div><b>De la idea a la pieza</b><small>Hablemos de tu proyecto</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="container">
+        <div class="section-head"><div class="section-kicker">Qué hacemos</div><h2>Soluciones 3D para tus ideas</h2><p>Desde una tarea escolar hasta una pieza funcional: cuéntanos qué necesitas y buscamos la mejor forma de imprimirlo.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-icon">🎓</div><h3>Tareas y maquetas escolares</h3><p>Modelos, maquetas arquitectónicas y proyectos educativos hechos a tu medida.</p></article>
+          <article class="service-card"><div class="service-icon">⚙️</div><h3>Proyectos de ingeniería</h3><p>Apoyo para diseño industrial, proyectos universitarios y desarrollo de ideas.</p></article>
+          <article class="service-card"><div class="service-icon">🧩</div><h3>Prototipos</h3><p>Prueba formas y conceptos con prototipos para tus proyectos y productos.</p></article>
+          <article class="service-card"><div class="service-icon">🔧</div><h3>Refacciones y piezas</h3><p>Piezas funcionales, adaptadores y repuestos personalizados según viabilidad.</p></article>
+          <article class="service-card"><div class="service-icon">🐉</div><h3>Figuras y decoración</h3><p>Figuras, accesorios, regalos y objetos decorativos en distintos colores.</p></article>
+          <article class="service-card"><div class="service-icon">🐾</div><h3>Accesorios para mascotas</h3><p>Placas identificadoras personalizadas para que tu compañero siempre lleve sus datos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="catalogo">
+      <div class="container">
+        <div class="section-head"><div class="section-kicker">Catálogo inicial</div><h2>Encuentra tu próxima idea</h2><p>Elige una opción para empezar tu pedido. Si necesitas algo distinto, también podemos cotizarlo.</p></div>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/catalogo-impresion3d.jpeg" alt="Colección de ejemplos de figuras, piezas y objetos impresos en 3D">
+            <div class="product-content"><span class="pill">A tu medida</span><h3>Figuras y objetos personalizados</h3><p>Figuras, organizadores, soportes, regalos y diseños especiales. El precio depende del tamaño y el diseño.</p><div class="price-row"><span class="price">Cotizar</span></div><a class="btn btn-primary" href="#" data-whatsapp="Hola, FORMIFY 3D. Me interesa cotizar figuras u objetos personalizados.">Pedir cotización ↗</a></div>
+          </article>
+          <article class="product-card">
+            <img src="assets/servicios-impresion3d.jpeg" alt="Piezas mecánicas y prototipos impresos en 3D">
+            <div class="product-content"><span class="pill">Proyectos y piezas</span><h3>Prototipos y refacciones</h3><p>Comparte medidas, una foto o tu archivo 3D para revisar la viabilidad y preparar una cotización.</p><div class="price-row"><span class="price">Cotizar</span></div><a class="btn btn-primary" href="#" data-whatsapp="Hola, FORMIFY 3D. Quiero cotizar un prototipo o una refacción.">Cotizar mi pieza ↗</a></div>
+          </article>
+          <article class="product-card">
+            <img src="assets/placas-mascotas.jpeg" alt="Placas de identificación para mascotas impresas en diferentes colores">
+            <div class="product-content"><span class="pill">Producto destacado</span><h3>Placas para mascotas</h3><p>Placas tipo huesito en distintos colores, con opciones para personalizar con datos de tu mascota.</p><div class="price-row"><span class="price">$35 <small>MXN c/u</small></span></div><a class="btn btn-primary" href="#mascotas">Ver precios y opciones ↓</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pet-section" id="mascotas">
+      <div class="container pet-grid">
+        <div class="pet-image"><img src="assets/placas-mascotas.jpeg" alt="Diseños y precios de placas 3D personalizadas para mascotas"></div>
+        <div class="pet-copy">
+          <div class="section-kicker">Personalizadas para tu compañero</div>
+          <h2>Una placa única para quien siempre está contigo. 🐾</h2>
+          <p>Elige color y personalización. Escríbenos por WhatsApp para compartir el nombre y los datos que quieres incluir antes de confirmar tu pedido.</p>
+          <div class="pet-options">
+            <div class="pet-option"><strong>$35</strong><span>MXN · Placa sencilla con nombre de mascota al frente</span></div>
+            <div class="pet-option"><strong>$50</strong><span>MXN · Nombre al frente y nombre del dueño + teléfono atrás</span></div>
+            <div class="pet-option"><strong>3 por $100</strong><span>MXN · Promoción de placas sencillas</span></div>
+            <div class="pet-option"><strong>3 por $130</strong><span>MXN · Promoción con datos personales del mismo dueño</span></div>
+          </div>
+          <a class="btn btn-light" href="#" data-whatsapp="Hola, FORMIFY 3D. Quiero pedir placas para mascotas. ¿Me ayudan a elegir el tipo, color y personalización?">Encargar placas por WhatsApp ↗</a>
+          <p class="delivery-note">📍 Entrega indicada: Fraccionamiento Viñedos · ⏱️ Tiempo máximo indicado: 48 horas. Confirma disponibilidad y entrega al hacer tu pedido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-pedir">
+      <div class="container">
+        <div class="section-head"><div class="section-kicker">Así de fácil</div><h2>¿Cómo hacer tu pedido?</h2><p>Nos ponemos de acuerdo contigo antes de imprimir para que el resultado se ajuste a lo que necesitas.</p></div>
+        <div class="steps">
+          <div class="step"><div class="step-num">01</div><h3>Cuéntanos tu idea</h3><p>Escríbenos por WhatsApp y comparte una foto, medidas o archivo si lo tienes.</p></div>
+          <div class="step"><div class="step-num">02</div><h3>Confirma los detalles</h3><p>Revisamos tamaño, color, personalización, precio y tiempo estimado.</p></div>
+          <div class="step"><div class="step-num">03</div><h3>¡A imprimir!</h3><p>Una vez confirmados los detalles, coordinamos la producción y la entrega.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <div class="container"><div class="cta-panel"><div><h2>¿Tienes una idea en mente?</h2><p>Cuéntanos qué quieres imprimir. Te ayudamos a convertirlo en algo real.</p></div><a class="btn btn-primary" href="#" data-whatsapp="Hola, FORMIFY 3D. Tengo una idea para imprimir y quiero recibir una cotización.">Hablemos por WhatsApp ↗</a></div></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-main"><div><div class="footer-brand">FORMIFY<span>3D</span></div><p>Tú lo imaginas, nosotros lo imprimimos. Impresión 3D personalizada para proyectos, piezas, figuras y mucho más.</p></div><div class="footer-links"><a href="#servicios">Servicios</a><a href="#catalogo">Catálogo</a><a href="#mascotas">Placas para mascotas</a><a href="#" data-whatsapp="Hola, FORMIFY 3D. Quiero más información.">Contacto</a></div></div>
+      <div class="copyright"><span>© <span id="year"></span> FORMIFY 3D. Todos los derechos reservados.</span><span>Precios sujetos a confirmación al realizar el pedido.</span></div>
+    </div>
+  </footer>
+  <a class="whatsapp-float" href="#" data-whatsapp="Hola, FORMIFY 3D. Quiero información sobre sus productos y servicios." aria-label="Contactar a FORMIFY 3D por WhatsApp" title="Escríbenos por WhatsApp">✆</a>
+  <div class="toast" id="toast" role="status">Abriendo WhatsApp…</div>
+  <script>
+    // Cambia este número si en el futuro deseas usar otro WhatsApp. Formato internacional sin + ni espacios.
+    const WHATSAPP_NUMBER = "524471159051";
+    document.querySelectorAll("[data-whatsapp]").forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        const message = link.getAttribute("data-whatsapp") || "Hola, FORMIFY 3D.";
+        const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+        window.open(url, "_blank", "noopener,noreferrer");
+      });
+    });
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    menuToggle.addEventListener("click", () => {
+      const opened = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(opened));
+      menuToggle.textContent = opened ? "×" : "☰";
+    });
+    mainNav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      mainNav.classList.remove("open"); menuToggle.setAttribute("aria-expanded","false"); menuToggle.textContent = "☰";
+    }));
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
